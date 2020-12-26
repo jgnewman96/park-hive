@@ -4,7 +4,8 @@
       <label for="title">Title</label>
       <input
         type="text"
-        v-model="page.title"
+        v-model="pageCopy.title"
+        @keyup.enter="updateTitle('pageCopy.title')"
         class="title"
         name="title"
         placeholder="Enter a title"
@@ -13,7 +14,8 @@
       <textarea
         class="content"
         name="content"
-        v-model="page.content"
+        v-model="pageCopy.content"
+        @keyup.enter="updateContent('pageCopy.content')"
         placeholder="Enter some content"
       ></textarea>
       <button @click="deletePage()">Delete Page</button>
@@ -28,13 +30,30 @@
 <script>
 export default {
   name: "Page",
-  props: ["page"],
+  props: ["page", "index"],
+  data: () => ({
+    pageCopy: { title: "", content: "" },
+  }),
   methods: {
     deletePage() {
       this.$emit("delete-page");
     },
     savePage() {
       this.$emit("save-page");
+    },
+    updateTitle() {
+      this.$emit("update-title", this.pageCopy.title);
+    },
+    updateContent() {
+      this.$emit("update-content", this.pageCopy.content);
+    },
+  },
+  watch: {
+    index: {
+      immediate: true,
+      handler() {
+        this.pageCopy = this.page;
+      },
     },
   },
 };

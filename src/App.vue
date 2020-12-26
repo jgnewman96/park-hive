@@ -1,16 +1,28 @@
 <template>
   <div id="app">
-    <BackendClient @get-notes="getPage" />
+    <Menu @menu-selection="ProcessSelection" :viewMode="viewMode" />
+
+    <button :class="button" v-if="viewMode" @click="switchMode()">
+      Edit Mode
+    </button>
+    <button v-else @click="switchMode">View Mode</button>
+
+    <BackendClient v-if="!viewMode" @get-notes="getPage" />
     <PageList
+      v-if="!viewMode"
       @change-page="changePage"
       @new-page="newPage"
       :pages="pages"
       :activePage="index"
     />
     <Page
+      v-if="!viewMode"
       @save-page="savePage"
       @delete-page="deletePage"
+      @update-title="updateTitle"
+      @update-content="updateContent"
       :page="pages[index]"
+      :index="index"
     />
   </div>
 </template>
@@ -19,6 +31,7 @@
 import PageList from "./components/PageList";
 import Page from "./components/Page";
 import BackendClient from "./components/BackendClient";
+import Menu from "./components/Menu";
 
 export default {
   name: "app",
@@ -26,10 +39,12 @@ export default {
     PageList,
     Page,
     BackendClient,
+    Menu,
   },
   data: () => ({
     pages: [],
     index: 0,
+    viewMode: true,
   }),
   methods: {
     newPage() {
@@ -45,12 +60,24 @@ export default {
     getPage(index) {
       console.log(index);
     },
+    updateTitle(title) {
+      this.pages[this.index].title = title;
+    },
+    updateContent(content) {
+      this.pages[this.index].content = content;
+    },
+    switchMode() {
+      this.viewMode = !this.viewMode;
+    },
     savePage() {
       // nothing as of yet
     },
     deletePage() {
       this.pages.splice(this.index, 1);
       this.index = Math.max(this.index - 1, 0);
+    },
+    ProcessSelection(itemSelected) {
+      console.log(itemSelected);
     },
   },
 };

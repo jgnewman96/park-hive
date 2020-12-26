@@ -3989,6 +3989,11 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
+focus-visible@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/focus-visible/-/focus-visible-5.2.0.tgz#3a9e41fccf587bd25dcc2ef045508284f0a4d6b3"
+  integrity sha512-Rwix9pBtC1Nuy5wysTmKy+UjbDJpIfg8eHjw0rjZ1mX4GNLz1Bmd16uDpI3Gk1i70Fgcs8Csg2lPm8HULFg9DQ==
+
 follow-redirects@^1.0.0, follow-redirects@^1.10.0:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
@@ -8262,6 +8267,13 @@ vue-eslint-parser@^7.2.0:
     espree "^6.2.1"
     esquery "^1.0.1"
     lodash "^4.17.15"
+
+vue-float-menu@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/vue-float-menu/-/vue-float-menu-1.9.0.tgz#8e6782748ddf63fbc1e7985efe15dc30707ec3e5"
+  integrity sha512-XqeO1qebNr73Qskk/whn+J3Mzd5YerS4NH/N7SIZPVsSFC2/3zotIFdgd568vtvZMuM60v1Su/qVDtTtnWbF/Q==
+  dependencies:
+    focus-visible "^5.2.0"
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"

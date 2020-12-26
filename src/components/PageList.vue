@@ -19,6 +19,7 @@
 export default {
   name: "Notebook",
   props: ["pages", "activePage"],
+
   methods: {
     changePage(index) {
       this.$emit("change-page", index);
