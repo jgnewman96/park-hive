@@ -3,7 +3,7 @@
     <float-menu
       :position="'center'"
       :dimension="90"
-      :menu-data="items"
+      :menu-data="menuItems"
       :on-selected="handleSelection"
     >
       Drag
@@ -21,6 +21,7 @@ export default {
   components: {
     FloatMenu,
   },
+  props: ["menuItems"],
   setup(props, { emit }) {
     const handleSelection = (selectedItem) => {
       emit("menu-selection", selectedItem);
@@ -28,24 +29,5 @@ export default {
 
     return { handleSelection };
   },
-  data: () => ({
-    viewMode: true,
-    items: [
-      { name: "New" },
-      {
-        name: "Edit",
-        subMenu: {
-          name: "edit-items",
-          items: [{ name: "Copy" }, { name: "Paste" }],
-        },
-      },
-      {
-        name: "Open Recent",
-      },
-      {
-        name: "",
-      },
-    ],
-  }),
 };
 </script>

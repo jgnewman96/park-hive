@@ -1,11 +1,7 @@
 <template>
   <div id="app">
-    <Menu @menu-selection="ProcessSelection" :viewMode="viewMode" />
-
-    <button :class="button" v-if="viewMode" @click="switchMode()">
-      Edit Mode
-    </button>
-    <button v-else @click="switchMode">View Mode</button>
+    <Menu @menu-selection="ProcessSelection" :menuItems="menuItems" />
+    <router-view />
 
     <BackendClient v-if="!viewMode" @get-notes="getPage" />
     <PageList
@@ -45,6 +41,22 @@ export default {
     pages: [],
     index: 0,
     viewMode: true,
+    menuItems: [
+      { name: "New" },
+      {
+        name: "Edit",
+        subMenu: {
+          name: "edit-items",
+          items: [{ name: "Copy" }, { name: "Paste" }],
+        },
+      },
+      {
+        name: "Books",
+      },
+      {
+        name: "Switch Modes",
+      },
+    ],
   }),
   methods: {
     newPage() {
@@ -78,6 +90,11 @@ export default {
     },
     ProcessSelection(itemSelected) {
       console.log(itemSelected);
+      if (itemSelected === "Switch Modes") {
+        this.switchMode();
+      } else {
+        this.$router.push({ name: "Books" });
+      }
     },
   },
 };
