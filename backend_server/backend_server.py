@@ -29,4 +29,4 @@ app.add_middleware(
 
 @app.get("/get_notes")
 def get_notes() -> List[str]:
-    return ["Page 1", "Page 2"]
+    return "## Note"

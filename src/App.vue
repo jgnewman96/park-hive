@@ -1,9 +1,10 @@
 <template>
   <div id="app">
     <Menu @menu-selection="ProcessSelection" :menuItems="menuItems" />
-    <router-view />
+    <Suspense>
+      <router-view />
+    </Suspense>
 
-    <BackendClient v-if="!viewMode" @get-notes="getPage" />
     <PageList
       v-if="!viewMode"
       @change-page="changePage"
@@ -26,7 +27,6 @@
 <script>
 import PageList from "./components/PageList";
 import Page from "./components/Page";
-import BackendClient from "./components/BackendClient";
 import Menu from "./components/Menu";
 
 export default {
@@ -34,7 +34,6 @@ export default {
   components: {
     PageList,
     Page,
-    BackendClient,
     Menu,
   },
   data: () => ({
@@ -93,7 +92,7 @@ export default {
       if (itemSelected === "Switch Modes") {
         this.switchMode();
       } else {
-        this.$router.push({ name: "Books" });
+        this.$router.push({ path: "/mdfile/vue" });
       }
     },
   },
