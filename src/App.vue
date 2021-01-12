@@ -92,7 +92,7 @@ export default {
       if (itemSelected === "Switch Modes") {
         this.switchMode();
       } else {
-        this.$router.push({ path: "/mdfile/vue" });
+        this.$router.push({ path: "/post/" + itemSelected });
       }
     },
   },

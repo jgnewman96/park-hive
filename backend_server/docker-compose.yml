@@ -8,5 +8,6 @@ services:
         --port 8100
     volumes:
       - './:/src'
+      - '../writing_content:/src/writing_content'
     ports:
       - "8100:8100"

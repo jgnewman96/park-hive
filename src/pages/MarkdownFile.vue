@@ -1,6 +1,6 @@
 <template>
   <div class="markdown-file">
-    <VueShowdown :markdown="data" flavor="github" :options="{ emoji: true }" />
+    <VueShowdown :markdown="data" flavor="allOn" :options="{ emoji: true }" />
   </div>
 </template>
 
@@ -11,10 +11,18 @@ export default {
   name: "MarkdownFile",
   props: ["markdownFile", "backendUrl"],
   async setup(props) {
-    const promise = axios.get(props.backendUrl + "get_notes");
+    const promise = axios.get(props.backendUrl + "get_file", {
+      params: { link_path: props.markdownFile },
+    });
     const data = await promise.then((response) => response.data);
 
     return { data };
   },
 };
 </script>
+
+<style>
+blockquote {
+  margin-left: 20;
+}
+</style>

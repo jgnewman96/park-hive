@@ -6,7 +6,7 @@ const backendUrl = "http://0.0.0.0:8100/"
 
 const routes = [
     {
-        path: '/mdfile/:markdownFile',
+        path: '/post/:markdownFile',
         component: MarkdownFile,
         props: route => ({ markdownFile: route.params.markdownFile, backendUrl: backendUrl })
     },

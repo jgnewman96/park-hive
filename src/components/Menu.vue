@@ -6,7 +6,7 @@
       :menu-data="menuItems"
       :on-selected="handleSelection"
     >
-      Drag
+      Menu
     </float-menu>
   </div>
 </template>
