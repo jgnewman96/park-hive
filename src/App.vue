@@ -2,9 +2,9 @@
   <div id="app">
     <Header />
     <Menu @menu-selection="ProcessSelection" :menuItems="menuItems" />
-    <Suspense>
-      <router-view />
-    </Suspense>
+
+    <recent-posts id="recent_posts" :backendUrl="backendUrl" />
+    <router-view id="main_content" />
 
     <PageList
       v-if="!viewMode"
@@ -32,6 +32,7 @@ import Page from "./components/Page";
 import Menu from "./components/Menu";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import RecentPosts from "./components/RecentPosts";
 
 export default {
   name: "app",
@@ -41,11 +42,13 @@ export default {
     Menu,
     Header,
     Footer,
+    RecentPosts,
   },
   data: () => ({
     pages: [],
     index: 0,
     viewMode: true,
+    backendUrl: "http://0.0.0.0:8100/",
     menuItems: [
       { name: "About This Project" },
       { name: "About Me" },
@@ -111,5 +114,20 @@ body {
 
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
+}
+#recent_posts {
+  position: absolute;
+  top: 200px;
+  width: 20%;
+}
+
+#main_content {
+  width: 70%;
+  height: auto;
+  position: relative;
+  left: 20%;
+  margin-top: 1%;
+  border-right: 4px solid #124653;
+  border-left: 4px solid #124653;
 }
 </style>

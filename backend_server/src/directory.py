@@ -90,6 +90,14 @@ class Directory:
             p for _, p in self.posts.items() if Subject(subject) in p.metadata.subjects
         ]
 
+    def get_recent_posts(self, number_of_posts: int) -> List[Post]:
+        posts = []
+        for i, key in enumerate(self.posts):
+            posts.append(self.posts[key])
+            if i == number_of_posts:
+                break
+        return posts
+
     @staticmethod
     def create_directory(base_dir: str) -> "Directory":
 

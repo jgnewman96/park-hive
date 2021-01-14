@@ -2,7 +2,26 @@
   <div class="markdown">
     <div class="header">
       <h2>{{ post.title }}</h2>
-      Date Published: {{ post.data_published }}
+
+      <ul id="subjects">
+        🏷
+        <li v-for="item in post.subjects" :key="item.id">
+          <router-link
+            :to="`/subject/${item}`"
+            style="background-color: #5c946e; color: white; padding: 1px"
+            >{{ item }}</router-link
+          >
+        </li>
+      </ul>
+
+      📚
+      <router-link
+        :to="`/medium/${post.medium}`"
+        style="background-color: #485665; color: white; padding: 3px"
+      >
+        {{ post.medium }} </router-link
+      ><br />
+      🗓 {{ post.data_published }}
     </div>
     <span v-html="post.file"></span>
   </div>
@@ -16,7 +35,7 @@ import { toRefs, ref, onMounted, watch } from "vue";
 export default {
   name: "MarkdownFile",
   props: ["markdownFile", "backendUrl"],
-  async setup(props) {
+  setup(props) {
     const { markdownFile } = toRefs(props);
     const converter = new showdown.Converter();
     const post = ref([]);
@@ -30,12 +49,13 @@ export default {
       post.value.title = value["metadata"]["title"];
       post.value.file = converter.makeHtml(value["file"]);
       post.value.data_published = value["metadata"]["date_published_str"];
+      post.value.medium = value["metadata"]["medium"];
+      post.value.subjects = value["metadata"]["subjects"];
+      console.log(post);
     };
 
-    onMounted(getPost(markdownFile.value));
+    onMounted(getPost);
     watch(markdownFile, getPost);
-
-    await getPost(markdownFile.value);
 
     return { post, getPost };
   },
@@ -52,19 +72,29 @@ blockquote {
 }
 
 .markdown {
-  margin: auto;
-  width: 70%;
-  border-right: 4px solid #124653;
-  border-left: 4px solid #124653;
   position: relative;
   top: 10px;
 }
 
 .header {
   padding: 10px;
-  text-align: center;
+  text-align: left;
   background: #7cc6fe;
   color: white;
   font-size: 15px;
+  text-transform: capitalize;
+}
+
+ul#subjects {
+  text-align: left;
+  position: relative;
+  left: -40px;
+  bottom: -8px;
+}
+
+ul#subjects li {
+  display: inline-block;
+  text-align: left;
+  margin: 1px;
 }
 </style>

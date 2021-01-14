@@ -45,3 +45,8 @@ def get_posts_by_medium(medium: str) -> List[Post]:
 @app.get("/get_posts_by_subject")
 def get_posts_by_subject(subject: str) -> List[Post]:
     return directory.get_posts_by_subject(subject)
+
+
+@app.get("/get_recent_posts")
+def get_recent_posts(number_of_posts: int) -> List[Post]:
+    return directory.get_recent_posts(number_of_posts)
