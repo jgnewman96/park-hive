@@ -3,7 +3,7 @@ title: "How Will You Measure Your Life?"
 date: 2020-03-23T15:10:17-05:00
 draft: False
 tags: ['Non-Fiction', 'Reflections']
-Categories: ['Books']
+categories: ['Books']
 ---
 
 I was introduced to this book through [Stratechery](https://stratechery.com/) and [Exponent](https://exponent.fm/). One of the co-hosts of Exponent, James Allworth, is a co-author of this book. While I have been reading Ben Thompson's (the author of Stratechery) writing for a couple years now, I knew a lot less about Allworth and his background. While James is a co-author of this book, the book is written from the perspective of Clayton Christensen. Christensen a professor at Harvard Business School, is best known for his work *The Innovator's Dillema*. This book focuses on taking theories from management consulting and applying them to your own life.

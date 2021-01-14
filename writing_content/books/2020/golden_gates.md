@@ -2,7 +2,7 @@
 title: "Golden Gates: Fighting for Housing in America"
 date: 2020-11-26T15:52:02-06:00
 draft: false
-tags: ['Urban Policy']
+tags: ['housing policy']
 categories: ['Books']
 ---
 

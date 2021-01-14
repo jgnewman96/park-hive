@@ -1,6 +1,6 @@
 ---
 title: 'Defining an Analysis: A Study of Client-Facing Data Scientists'
-date: Fri, 18 Oct 2019 17:46:58 +0000
+date: 2019-10-18
 draft: false
 tags: ['Software Engineering']
 categories: ['Papers']

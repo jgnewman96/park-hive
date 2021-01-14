@@ -1,6 +1,6 @@
 ---
 title: 'Green AI'
-date: Mon, 30 Sep 2019 03:40:49 +0000
+date: 2019-09-30
 draft: false
 tags: ['Machine Learning']
 categories: ['Papers']

@@ -2,12 +2,12 @@
 Simple HTTP server to interact with python backend
 """
 import logging
-from typing import List
+from typing import Any, Dict, List
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from src.directory import Directory
+from src.directory import Directory, Post
 from src.markdown_file import MarkdownFile
 
 LOGGER = logging.getLogger(__name__)
@@ -30,8 +30,18 @@ app.add_middleware(
 
 
 @app.get("/get_file")
-def get_file(link_path: str) -> str:
-    filename = directory.get_filename(link_path)
-    file = MarkdownFile(filename)
+def get_file(link_path: str) -> Dict[str, Any]:
+    post = directory.get_post_by_link_path(link_path)
+    file = MarkdownFile(post.file_path)
 
-    return file.render()
+    return {"metadata": post.metadata, "file": file.render()}
+
+
+@app.get("/get_posts_by_medium")
+def get_posts_by_medium(medium: str) -> List[Post]:
+    return directory.get_posts_by_medium(medium)
+
+
+@app.get("/get_posts_by_subject")
+def get_posts_by_subject(subject: str) -> List[Post]:
+    return directory.get_posts_by_subject(subject)

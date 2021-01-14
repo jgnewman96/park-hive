@@ -2,7 +2,7 @@
 title: "Seeing Like A State"
 date: 2020-12-14T17:04:28-06:00
 draft: false
-tags: ['History', 'Urban Policy']
+tags: ['History', 'politics']
 categories: ['Books']
 ---
 

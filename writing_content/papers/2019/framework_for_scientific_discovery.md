@@ -1,6 +1,6 @@
 ---
 title: 'Scientific discovery in a model-centric framework: Reproducibility, innovation, and epistemic diversity'
-date: Sun, 29 Sep 2019 22:04:54 +0000
+date: 2019-09-29
 draft: false
 tags: ['Statistics']
 categories: ['Papers']

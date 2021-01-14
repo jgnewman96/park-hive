@@ -16,13 +16,16 @@ While working at Change is different than working on a political campaign, I ima
 This attitude actually really negatively impacted my work experience. Not only was I feeling less enthused about work, but I think the quality of my work also deteriorated a bit. I am a firm believer that working more hours does not lead to getting more work done. But when there is pressure to get work done, that is an easy margin to adjust on. Engineering work is truly a creative process. It takes time and space to do things the right way. When I am working more hours it can often take me longer to get something done. I do not think the problem through as well and I make more mistakes.
 
 We were constantly justifying decisions with the following logic:
-> It is fine if this is imperfect right now. Let's get it out the door and we can make it better later on.
+{{< quote >}}
+It is fine if this is imperfect right now. Let's get it out the door and we can make it better later on.
+{{< /quote >}}
 
 But this tradeoff was often a false one. Using the imperfect solution led to more difficulties later on and did not actually mean we delivered anything quicker. We were using that logic to justify doing worse work. Going through this election season has been a really good opportunity to explore that tradeoff. In general, I think it is better to take a little bit more time upfront.
 
 * * *
 
 During the past few months, I was often finding myself drained at the end of the day. I was not excited about going to work the next day and did not have a lot of energy. Part of this can be attributed to the above difficulties. Part of it can be attributed to other organizational frustrations. But a big part of it can be attributed to the lack of design that I was doing.
+
 
 One question I constantly return to is "what gives me energy?" What are the activities that give me more energy after I finish them then when I started? These are the activities I should be seeking out. As I have grown in my career and shifted from a pure data scientist to more of a engineering role, I found that design is what gives me energy.
 

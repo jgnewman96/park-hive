@@ -2,7 +2,7 @@
 title: "On the Legal Compatibility of Fairness Definitions"
 date: 2021-01-11T12:49:56-06:00
 draft: false
-tags: ['Policy']
+tags: ['legal policy', 'tech policy']
 categories: ['Papers']
 ---
 
@@ -37,7 +37,7 @@ In legal settings we see both people in the majority and the minority use this c
 
 **Anti-classification and Anti-subordination**
 
-The authors argue that most ML work currently focus on anti-classification which is that classifications should not be made based on protected attributes. When this paper was written the authors argue that ML work has not looked at anti-subordination which tries to actively dismantle social hierarchies. A paper which I read last year [Decolonial AI]({{< ref  "/writing/papers/2020/decolonial_ai" >}}) looks at that.
+The authors argue that most ML work currently focus on anti-classification which is that classifications should not be made based on protected attributes. When this paper was written the authors argue that ML work has not looked at anti-subordination which tries to actively dismantle social hierarchies. A paper which I read last year [Decolonial AI](decolonial_ai) looks at that.
 
 **Affirmative Action**
 Affirmative Action allows places to directly consider race when they are making decisions. Most ML research only focuses on how to not take protected attribute's into account.

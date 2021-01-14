@@ -2,7 +2,7 @@
 title: "“Data Strikes”: Evaluating the Effectiveness of a New Form of Collective Action Against Technology Companies"
 date: 2020-11-26T15:32:49-06:00
 draft: false
-tags: ['Policy']
+tags: ['tech policy']
 categories: ['Papers']
 ---
 

@@ -12,6 +12,8 @@ fastapi = "*"
 pydantic = "*"
 uvicorn = "*"
 mdutils = "*"
+python-frontmatter = "*"
+aenum = "*"
 
 [requires]
 python_version = "3.9"

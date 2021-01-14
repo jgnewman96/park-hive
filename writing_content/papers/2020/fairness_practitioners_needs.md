@@ -2,7 +2,7 @@
 title: "Improving Fairness in Machine Learning Systems: What Do Industry Practitioners Need?"
 date: 2020-11-26T15:42:48-06:00
 draft: false
-tags: ['Data Science']
+tags: ['machine learning', 'ai policy']
 categories: ['Papers']
 
 ---

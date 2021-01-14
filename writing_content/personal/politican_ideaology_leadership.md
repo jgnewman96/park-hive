@@ -2,7 +2,7 @@
 title: "What are we looking for in a politician?"
 date: 2020-03-14T14:15:50-05:00
 draft: False
-tags: ['Policy', 'Reflections']
+tags: ['politics', 'Reflections']
 categories: ['Personal']
 ---
 

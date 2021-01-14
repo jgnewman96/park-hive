@@ -2,7 +2,7 @@
 title: "Decolonial AI: Decolonial Theory as Sociotechnical Foresight in Artificial Intelligence"
 date: 2020-11-22T12:45:03-06:00
 draft: False
-tags: ['Policy', 'Race']
+tags: ['ai policy', 'Race']
 categories: ['Papers']
 ---
 

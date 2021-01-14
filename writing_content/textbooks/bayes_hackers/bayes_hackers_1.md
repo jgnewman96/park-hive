@@ -2,7 +2,7 @@
 title: "Bayesian Methods for Hackers: Prologue and Chapter 1"
 date: 2020-04-15T18:08:51-05:00
 draft: false
-tags: ['Data Science', 'Statistics']
+tags: ['machine learning', 'Statistics']
 categories: ['Textbooks']
 katex: true
 ---

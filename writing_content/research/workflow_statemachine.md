@@ -2,7 +2,7 @@
 title: "Workflow State Machine: Letter to Tushar"
 date: 2020-04-18T09:47:25-05:00
 draft: False
-tags: ['Data Science', 'Reflections']
+tags: ['software engineering', 'Reflections']
 categories: ['Personal']
 ---
 

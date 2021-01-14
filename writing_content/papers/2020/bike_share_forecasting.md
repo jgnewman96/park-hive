@@ -2,7 +2,7 @@
 title: "Towards Fine-grained Flow Forecasting: A Graph Attention Approach for Bike Sharing Systems"
 date: 2020-09-24T16:02:40-07:00
 draft: False
-tags: ['Policy', 'Deep Learning']
+tags: ['transportation policy', 'Deep Learning']
 categories: ['Papers']
 ---
 

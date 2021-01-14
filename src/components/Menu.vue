@@ -1,10 +1,16 @@
 <template>
   <div class="menu">
     <float-menu
-      :position="'center'"
+      position="top right"
       :dimension="90"
       :menu-data="menuItems"
       :on-selected="handleSelection"
+      :theme="{
+        primary: '#485665',
+        textColor: '#000',
+        menuBgColor: '#fff',
+        textSelectedColor: '#ffb5c2',
+      }"
     >
       Menu
     </float-menu>
@@ -31,3 +37,6 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+</style>

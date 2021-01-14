@@ -2,7 +2,7 @@
 title: "Bayesian Methods for Hackers: Chapter 2"
 date: 2020-04-21T16:38:35-05:00
 draft: false
-tags: ['Data Science' , 'Statistics']
+tags: ['machine learning' , 'Statistics']
 categories: ['TextBooks']
 katex: true
 ---

@@ -2,12 +2,13 @@ import re
 from abc import ABC, abstractmethod
 from typing import List, Tuple
 
+import frontmatter
+
 
 class MarkdownFile:
     def __init__(self, filename: str):
-        f = open(filename, "r")
 
-        self.filetext = f.read()
+        self.filetext = frontmatter.load(filename).content
 
         self.operations = [QuoteParser()]
 
@@ -44,8 +45,7 @@ class QuoteParser(TextParser):
             start_important = start + len(self.start_id) + 1
             end_important = end - 1
             important_text = text[start_important:end_important]
-            insert_text = f"""<blockquote
-                               style="background-color: lightgoldenrodyellow;  border-width: 1px; border-style: solid; border-left: 3px solid;">
+            insert_text = f"""<blockquote>
                                <p><i>{important_text}</i>
                                </blockquote>"""
 

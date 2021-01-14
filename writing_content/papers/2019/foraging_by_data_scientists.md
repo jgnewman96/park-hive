@@ -1,6 +1,6 @@
 ---
 title: 'Towards Effective Foraging by Data Scientists to Find Past Analysis Choices'
-date: Tue, 08 Oct 2019 16:23:38 +0000
+date: 2019-10-08
 draft: false
 tags: ['Software Engineering']
 categories: ['Papers']

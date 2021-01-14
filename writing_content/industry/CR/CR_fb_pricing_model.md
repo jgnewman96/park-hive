@@ -2,7 +2,7 @@
 title: "Change Research: Poll Cost Model"
 date: 2020-03-17T13:47:52-05:00
 draft: True
-tags: ['Data Science']
+tags: ['machine learning']
 categories: ['Industry']
 ---
 

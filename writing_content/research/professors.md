@@ -2,7 +2,7 @@
 title: "Professors"
 date: 2019-12-14T07:58:23-07:00
 draft: false
-tags:
+tags: ["academia"]
 categories: ['Research']
 ---
 

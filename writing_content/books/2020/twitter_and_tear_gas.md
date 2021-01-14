@@ -2,7 +2,7 @@
 title: "Twitter and Tear Gas: The Power and Fragility of Networked Protest "
 date: 2020-06-07T16:31:05-05:00
 draft: False
-tags: ['Non-Fiction', 'Policy', 'History']
+tags: ['Non-Fiction', 'politics', 'History']
 categories: ['Books']
 ---
 

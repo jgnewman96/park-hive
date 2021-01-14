@@ -2,7 +2,7 @@
 title: "Hacking the Electorate: How Campaigns Percieve Voters"
 date: 2020-05-31T13:35:33-05:00
 draft: False
-tags: ['Non Fiction', 'Policy']
+tags: ['Non Fiction', 'politics']
 categories: ['Books']
 ---
 

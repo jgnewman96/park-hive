@@ -2,8 +2,8 @@
 title: "A Difficulty in the Concept of Social Welfare"
 date: 2020-07-27T11:59:27-04:00
 draft: False
-tags: ['Economics']
-categories: ['Textbooks']
+tags: ['Economics', 'politics']
+categories: ['paper']
 katex: true
 ---
 

@@ -2,7 +2,7 @@
 title: "Data and Power: Archival Appraisal Theory as a Framework for Data Preservation"
 date: 2020-11-15T10:30:42-06:00
 draft: false
-tags: ['Policy']
+tags: ['tech policy']
 categories: ['Papers']
 ---
 By [Sarita Schoenbeck](https://yardi.people.si.umich.edu/) and [Paul Conway](https://www.si.umich.edu/people/paul-conway)

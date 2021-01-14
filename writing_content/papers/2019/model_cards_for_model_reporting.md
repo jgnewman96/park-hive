@@ -1,6 +1,6 @@
 ---
 title: 'Model Cards for Model Reporting'
-date: Sat, 05 Oct 2019 22:08:21 +0000
+date: 2019-10-05
 draft: false
 tags: ['Machine Learning']
 categories: ['Papers']

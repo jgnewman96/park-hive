@@ -1,6 +1,6 @@
 ---
 title: 'Planning for the Offseason'
-date: Mon, 07 Oct 2019 22:03:08 +0000
+date: 2019-10-07
 draft: false
 tags: ['Frisbee']
 categories: ['Personal']

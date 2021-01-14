@@ -377,7 +377,7 @@ because we are not in it.
 #### [*The Omnivore's Dilemma - Michael Pollan*](omnivores_dillema)
 #### [*Washington Black - Esi Edugyan*](washington_black)
 #### [*Creativity Inc. - Ed Catmull*](creativity_inc)
-#### [*My Year of Rest and Relaxation - Otessa Moshfegh*](rest_and_relaxation.md)
+#### [*My Year of Rest and Relaxation - Otessa Moshfegh*](rest_and_relaxation)
 #### [*The Lords of the Realm - John Helyar*](lords_of_the_realm)
 #### [*Their Eyes Were Watching God - Zora Neale Hurston*](their_eyes_were_watching_god)
 

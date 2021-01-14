@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Header />
     <Menu @menu-selection="ProcessSelection" :menuItems="menuItems" />
     <Suspense>
       <router-view />
@@ -21,6 +22,7 @@
       :page="pages[index]"
       :index="index"
     />
+    <Footer />
   </div>
 </template>
 
@@ -28,6 +30,8 @@
 import PageList from "./components/PageList";
 import Page from "./components/Page";
 import Menu from "./components/Menu";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default {
   name: "app",
@@ -35,26 +39,19 @@ export default {
     PageList,
     Page,
     Menu,
+    Header,
+    Footer,
   },
   data: () => ({
     pages: [],
     index: 0,
     viewMode: true,
     menuItems: [
-      { name: "New" },
-      {
-        name: "Edit",
-        subMenu: {
-          name: "edit-items",
-          items: [{ name: "Copy" }, { name: "Paste" }],
-        },
-      },
-      {
-        name: "Books",
-      },
-      {
-        name: "Switch Modes",
-      },
+      { name: "About This Project" },
+      { name: "About Me" },
+      { name: "Books" },
+      { name: "Internet Reading" },
+      { name: "Writing" }, //could make this a sub menu
     ],
   }),
   methods: {
@@ -91,6 +88,8 @@ export default {
       console.log(itemSelected);
       if (itemSelected === "Switch Modes") {
         this.switchMode();
+      } else if (itemSelected === "Writing") {
+        this.$router.push({ path: "/medium/" + "paper" });
       } else {
         this.$router.push({ path: "/post/" + itemSelected });
       }
@@ -112,7 +111,5 @@ body {
 
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
-  display: flex;
-  flex-direction: row;
 }
 </style>

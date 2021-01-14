@@ -2,7 +2,7 @@
 title: "The Hardware Lottery"
 date: 2020-11-26T15:32:23-06:00
 draft: false
-tags: ['Policy', 'History']
+tags: ['tech policy', 'History']
 categories: ['Papers']
 ---
 

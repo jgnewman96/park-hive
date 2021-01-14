@@ -1,6 +1,6 @@
 ---
 title: 'Futzing and Moseying: Interviews with Professional Data Analysts on Exploration Practices'
-date: Mon, 21 Oct 2019 19:48:27 +0000
+date: 2019-10-21
 draft: false
 tags: ['Software Engineering']
 categories: ['Papers']

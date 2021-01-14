@@ -2,7 +2,7 @@
 title: "Equality of Opportunity in Supervised Learning"
 date: 2020-08-28T11:23:08-07:00
 draft: False
-tags: ['Machine Learning', 'Policy']
+tags: ['Machine Learning', 'ai policy']
 categories: ['Papers']
 ---
 

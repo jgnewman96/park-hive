@@ -2,7 +2,7 @@
 title: "Deconstructing the Filter Bubble: User Decision-Making and Recommender Systems"
 date: 2020-11-26T15:47:47-06:00
 draft: false
-tags: ['Policy']
+tags: ['tech policy']
 categories: ['Papers']
 ---
 

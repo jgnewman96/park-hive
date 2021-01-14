@@ -14,8 +14,7 @@
         "vue": "3.0.4",
         "vue-float-menu": "^1.9.0",
         "vue-resource": "^1.5.1",
-        "vue-router": "^4.0.0-0",
-        "vue-showdown": "https://github.com/meteorlxy/vue-showdown.git"
+        "vue-router": "^4.0.0-0"
     },
     "devDependencies": {
         "@vue/cli-plugin-babel": "~4.5.0",

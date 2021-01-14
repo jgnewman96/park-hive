@@ -3,7 +3,7 @@ title: "Sing Unburied Sing"
 date: 2020-01-27T08:53:56-08:00
 draft: False
 tags: ['Fiction']
-Categories: ['Books']
+categories: ['Books']
 ---
 
 *Sing, Unburied Sing* is a novel by Jesmyn Ward set in the American South. As with Ward's other books, the novel does such an incredible job of getting inside characters heads. Ward is able to convey characters as nuanced individuals. She shows the darkest parts of our internal minds, how complex and convoluted they can be.

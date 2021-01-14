@@ -1,8 +1,8 @@
 ---
 title: "ODSC"
-date: "2019-11-02"
+date: 2019-11-02
 draft: false
-tags: ['Conferences']
+tags: ['machine learning']
 categories: ['Talks']
 ---
 
@@ -67,17 +67,17 @@ I attended ODSC (Open Data Science Conference) West in October 2019. Here are th
 
 ## Day 4, Friday November 1, 2019
 
-## General thoughts 
+## General thoughts
 
-What is my point of differentation, 
+What is my point of differentation,
 
-also there is so many different things and how do I specilize 
+also there is so many different things and how do I specilize
 
-having a long career and pursuing my interests 
+having a long career and pursuing my interests
 
-what makes a good talk 
-- move through slides quickly 
-- mostly illustration do not actually need to read anything 
-- shorter talk is generally easier or better 
+what makes a good talk
+- move through slides quickly
+- mostly illustration do not actually need to read anything
+- shorter talk is generally easier or better
 
 
