@@ -1,7 +1,7 @@
 <template>
   <div class="markdown">
     <div class="header">
-      <h2>{{ post.title }}</h2>
+      <h2 style="font-size: 30px">{{ post.title }}</h2>
 
       <ul id="subjects">
         🏷
@@ -96,5 +96,21 @@ ul#subjects li {
   display: inline-block;
   text-align: left;
   margin: 1px;
+}
+
+.sidenote {
+  float: right;
+  clear: right;
+  margin-right: -25%;
+  font-style: italic;
+  font-weight: normal;
+  width: 20%;
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  vertical-align: baseline;
+  position: relative;
+  color: black;
 }
 </style>

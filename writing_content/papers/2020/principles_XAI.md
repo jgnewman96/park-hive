@@ -58,7 +58,7 @@ The authors next break the different types of representations or explanations in
 
 ## Explainability [^2]
 
-Models can be categorized into two categories, transparent models and opaque models. Transparent models we can look directly at their properties and understand immediately what is going on. For linear regressions we can look at their coefficients or with decisions trees we can look at their rules. [^3]. Then there are opaque models which we cannot understand by directly looking at them. Opaque models generally achieve higher accuracy since they can create more complex decision boundaries.
+Models can be categorized into two categories, transparent models and opaque models. Transparent models we can look directly at their properties and understand immediately what is going on. For linear regressions we can look at their coefficients or with decisions trees we can look at their rules.[^3] Then there are opaque models which we cannot understand by directly looking at them. Opaque models generally achieve higher accuracy since they can create more complex decision boundaries.
 
 List of explainability approaches:
 

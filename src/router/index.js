@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import MarkdownFile from '../pages/MarkdownFile.vue'
 import PostsByMedium from '../pages/PostsByMedium'
 import PostsBySubject from '../pages/PostsBySubject'
-import App from '../App.vue'
+import AboutPage from '../pages/AboutPage'
 
 const backendUrl = "http://0.0.0.0:8100/"
 
@@ -22,12 +22,25 @@ const routes = [
         component: PostsBySubject,
         props: route => ({ subject: route.params.subject, backendUrl: backendUrl })
     },
-    /// could make about this project have the path
-    /// but then make the component be markdown file with certain parameters
     {
-        path: '/home',
-        name: 'Home',
-        component: App
+        path: '/',
+        component: AboutPage,
+        props: { pageName: "about_this_project", backendUrl: backendUrl }
+    },
+    {
+        path: '/research',
+        component: AboutPage,
+        props: { pageName: "research", backendUrl: backendUrl }
+    },
+    {
+        path: '/about_me',
+        component: AboutPage,
+        props: { pageName: "about_me", backendUrl: backendUrl }
+    },
+    {
+        path: '/internet_reading',
+        component: AboutPage,
+        props: { pageName: "internet_reading", backendUrl: backendUrl }
     },
 ]
 

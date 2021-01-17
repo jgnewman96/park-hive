@@ -44,6 +44,17 @@ export default {
     Footer,
     RecentPosts,
   },
+  mounted() {
+    var goatcounter = document.createElement("script");
+    goatcounter.setAttribute(
+      "data-goatcounter",
+      "https://jgnewman.goatcounter.com/count"
+    );
+    goatcounter.setAttribute("async", "true");
+    goatcounter.setAttribute("src", "https://srcrs.top/assets/js/count.js");
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(goatcounter, s);
+  },
   data: () => ({
     pages: [],
     index: 0,
@@ -53,8 +64,9 @@ export default {
       { name: "About This Project" },
       { name: "About Me" },
       { name: "Books" },
+      { name: "Academic Papers" },
+      { name: "Research" },
       { name: "Internet Reading" },
-      { name: "Writing" }, //could make this a sub menu
     ],
   }),
   methods: {
@@ -91,10 +103,18 @@ export default {
       console.log(itemSelected);
       if (itemSelected === "Switch Modes") {
         this.switchMode();
-      } else if (itemSelected === "Writing") {
+      } else if (itemSelected === "Books") {
+        this.$router.push({ path: "/medium/" + "book" });
+      } else if (itemSelected === "Academic Papers") {
         this.$router.push({ path: "/medium/" + "paper" });
-      } else {
-        this.$router.push({ path: "/post/" + itemSelected });
+      } else if (itemSelected === "About This Project") {
+        this.$router.push({ path: "/" });
+      } else if (itemSelected === "About Me") {
+        this.$router.push({ path: "/about_me" });
+      } else if (itemSelected === "Research") {
+        this.$router.push({ path: "/research/" });
+      } else if (itemSelected === "Internet Reading") {
+        this.$router.push({ path: "/internet_reading/" });
       }
     },
   },
@@ -123,11 +143,11 @@ body {
 
 #main_content {
   width: 70%;
-  height: auto;
   position: relative;
   left: 20%;
   margin-top: 1%;
   border-right: 4px solid #124653;
   border-left: 4px solid #124653;
+  padding: 1%;
 }
 </style>

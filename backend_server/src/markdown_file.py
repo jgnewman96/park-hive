@@ -10,7 +10,7 @@ class MarkdownFile:
 
         self.filetext = frontmatter.load(filename).content
 
-        self.operations = [QuoteParser()]
+        self.operations = [QuoteParser(), SideNoteParser()]
 
     def render(self) -> str:
         text: str = self.filetext
@@ -53,5 +53,32 @@ class QuoteParser(TextParser):
             start_block = start - 1
             replace_text = text[start_block:end_block]
             text = text.replace(replace_text, insert_text)
+
+        return text
+
+
+class SideNoteParser:
+    def parse(self, text: str) -> str:
+        pattern = re.compile("\[\^[0-9]]")
+        matches = pattern.findall(text)
+        start_idxs: List[int] = [m.start() for m in re.finditer(pattern, text)]
+        num_footnotes = int(len(start_idxs) / 2)
+        inline_idxs = start_idxs[0:num_footnotes]
+        end_idxs: List[int] = start_idxs[num_footnotes:]
+
+        # adding one more for the last note
+        end_idxs.append(len(text))
+        footnote_texts: List[str] = []
+
+        for i in range(0, len(end_idxs) - 1):
+            start_idx = end_idxs[i] + 6
+            end_idx = end_idxs[i + 1]
+            footnote_texts.append(text[start_idx:end_idx].strip("\n"))
+
+        text = text[0 : end_idxs[0]]
+
+        for i, footnote_str in enumerate(matches[0:num_footnotes]):
+            replacement_text = f"<sup>{i+1}</sup> <span class='sidenote'> <sup>{i+1}</sup> {footnote_texts[i]}</span>"
+            text = text.replace(footnote_str, replacement_text)
 
         return text

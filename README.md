@@ -3,7 +3,7 @@
 The backend server can be started with
 
 ```
-docker-compose -f backend_server/docker-compose.yml up
+docker-compose -f docker-compose.yml up
 ```
 
 ## Project setup
