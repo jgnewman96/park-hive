@@ -45,8 +45,12 @@ export default {
   name: "RecentPosts",
   setup() {
     const recent_posts = ref([]);
+
+    const axios_client = axios.create({
+      baseURL: process.env.BASE_URL,
+    });
     const getRecentPosts = async () => {
-      const promise = axios.get("get_recent_posts", {
+      const promise = axios_client.get("get_recent_posts", {
         params: { number_of_posts: 5 },
       });
       recent_posts.value = await promise.then((response) => response.data);

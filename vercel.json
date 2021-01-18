@@ -25,6 +25,14 @@
         {
             "src": "/get_recent_posts",
             "dest": "backend_server/backend_server.py"
+        },
+        {
+            "handle": "filesystem"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/$1",
+            "continue": true
         }
     ]
 }
