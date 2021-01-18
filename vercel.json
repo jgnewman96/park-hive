@@ -1,6 +1,10 @@
 {
     "builds": [
         {
+            "src": "dist/*.html",
+            "use": "@now/static"
+        },
+        {
             "src": "backend_server/backend_server.py",
             "use": "@now/python"
         }
