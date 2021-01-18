@@ -9,7 +9,7 @@ const routes = [
     {
         path: '/post/:markdownFile',
         component: MarkdownFile,
-        props: route => ({ markdownFile: route.params.markdownFile })
+        props: route => ({ markdownFile: route.params.markdownFile }),
     },
     {
         path: '/medium/:medium',

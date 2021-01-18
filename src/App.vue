@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <title>Judah Newman's Archive</title>
     <Header />
     <Menu @menu-selection="ProcessSelection" :menuItems="menuItems" />
 
@@ -54,6 +55,7 @@ export default {
     goatcounter.setAttribute("src", "https://srcrs.top/assets/js/count.js");
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(goatcounter, s);
+    document.title = "Judah Newman's Archive";
   },
   data: () => ({
     pages: [],
