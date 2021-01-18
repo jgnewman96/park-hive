@@ -3,11 +3,11 @@ services:
   backend-server:
     build: ./backend_server
     command: |
-      python start_server.py
+      python backend_server/start_server.py
         --host "0.0.0.0"
         --port 8100
     volumes:
-      - './backend_server:/src'
+      - './:/src'
       - './writing_content:/src/writing_content'
     ports:
       - "8100:8100"

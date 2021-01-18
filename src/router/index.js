@@ -4,43 +4,42 @@ import PostsByMedium from '../pages/PostsByMedium'
 import PostsBySubject from '../pages/PostsBySubject'
 import AboutPage from '../pages/AboutPage'
 
-const backendUrl = "http://0.0.0.0:3000/"
 
 const routes = [
     {
         path: '/post/:markdownFile',
         component: MarkdownFile,
-        props: route => ({ markdownFile: route.params.markdownFile, backendUrl: backendUrl })
+        props: route => ({ markdownFile: route.params.markdownFile })
     },
     {
         path: '/medium/:medium',
         component: PostsByMedium,
-        props: route => ({ medium: route.params.medium, backendUrl: backendUrl })
+        props: route => ({ medium: route.params.medium })
     },
     {
         path: '/subject/:subject',
         component: PostsBySubject,
-        props: route => ({ subject: route.params.subject, backendUrl: backendUrl })
+        props: route => ({ subject: route.params.subject })
     },
     {
         path: '/',
         component: AboutPage,
-        props: { pageName: "about_this_project", backendUrl: backendUrl }
+        props: { pageName: "about_this_project" }
     },
     {
         path: '/research',
         component: AboutPage,
-        props: { pageName: "research", backendUrl: backendUrl }
+        props: { pageName: "research" }
     },
     {
         path: '/about_me',
         component: AboutPage,
-        props: { pageName: "about_me", backendUrl: backendUrl }
+        props: { pageName: "about_me" }
     },
     {
         path: '/internet_reading',
         component: AboutPage,
-        props: { pageName: "internet_reading", backendUrl: backendUrl }
+        props: { pageName: "internet_reading" }
     },
 ]
 

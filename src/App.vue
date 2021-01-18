@@ -59,7 +59,6 @@ export default {
     pages: [],
     index: 0,
     viewMode: true,
-    backendUrl: "http://0.0.0.0:3000/",
     menuItems: [
       { name: "About This Project" },
       { name: "About Me" },

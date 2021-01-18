@@ -33,5 +33,6 @@ For those interested here is more information about the technical stack of this 
 - I developed my own version of sidenotes based on some code from [Tufte-CSS](https://github.com/edwardtufte/tufte-css)
 - I use [Coolors](https://coolors.co/) to create the color scheme.
 - I use [Goat Counter](https://www.goatcounter.com/) to monitor website usage
+- I use [Vercel](https://github.com/vercel/vercel) to handle deployment of the frontend and backend
 
 

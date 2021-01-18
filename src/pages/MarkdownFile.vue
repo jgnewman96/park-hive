@@ -34,14 +34,18 @@ import { toRefs, ref, onMounted, watch } from "vue";
 
 export default {
   name: "MarkdownFile",
-  props: ["markdownFile", "backendUrl"],
+  props: ["markdownFile"],
   setup(props) {
     const { markdownFile } = toRefs(props);
     const converter = new showdown.Converter();
     const post = ref([]);
 
+    const axios_client = axios.create({
+      baseURL: process.env.BASE_URL,
+    });
+
     const getPost = async () => {
-      const promise = axios.get(props.backendUrl + "get_file", {
+      const promise = axios_client.get("get_file", {
         params: { link_path: props.markdownFile },
       });
       const value = await promise.then((response) => response.data);

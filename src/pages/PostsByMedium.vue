@@ -35,12 +35,16 @@ import { ref, watch, onMounted, toRefs } from "vue";
 
 export default {
   name: "PostsByMedium",
-  props: ["medium", "backendUrl"],
+  props: ["medium"],
   setup(props) {
+    const axios_client = axios.create({
+      baseURL: process.env.BASE_URL,
+    });
+
     const { medium } = toRefs(props);
     const posts = ref([]);
     const getPosts = async () => {
-      const promise = axios.get(props.backendUrl + "get_posts_by_medium", {
+      const promise = axios_client.get("get_posts_by_medium", {
         params: { medium: props.medium },
       });
       posts.value = await promise.then((response) => response.data);

@@ -1,8 +1,8 @@
 {
     "builds": [
         {
-            "src": "dist/*.html",
-            "use": "@now/static"
+            "src": "package.json",
+            "use": "@vercel/static-build"
         },
         {
             "src": "backend_server/backend_server.py",

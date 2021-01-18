@@ -32,12 +32,16 @@ import { ref, watch, onMounted, toRefs } from "vue";
 
 export default {
   name: "PostsBySubject",
-  props: ["subject", "backendUrl"],
+  props: ["subject"],
   setup(props) {
+    const axios_client = axios.create({
+      baseURL: process.env.BASE_URL,
+    });
+
     const { subject } = toRefs(props);
     const posts = ref([]);
     const getPosts = async () => {
-      const promise = axios.get(props.backendUrl + "get_posts_by_subject", {
+      const promise = axios_client.get("get_posts_by_subject", {
         params: { subject: props.subject },
       });
       posts.value = await promise.then((response) => response.data);

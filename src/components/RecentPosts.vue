@@ -43,11 +43,10 @@ import axios from "axios";
 import { onMounted, ref } from "vue";
 export default {
   name: "RecentPosts",
-  props: ["backendUrl"],
-  setup(props) {
+  setup() {
     const recent_posts = ref([]);
     const getRecentPosts = async () => {
-      const promise = axios.get(props.backendUrl + "get_recent_posts", {
+      const promise = axios.get("get_recent_posts", {
         params: { number_of_posts: 5 },
       });
       recent_posts.value = await promise.then((response) => response.data);
