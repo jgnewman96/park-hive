@@ -7,8 +7,8 @@ from typing import Any, Dict, List
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from src.directory import Directory, Post
-from src.markdown_file import MarkdownFile
+from backend_server.src.directory import Directory, Post
+from backend_server.src.markdown_file import MarkdownFile
 
 LOGGER = logging.getLogger(__name__)
 
@@ -20,6 +20,7 @@ origins = [
     "https://localhost:8080",
     "http://localhost:8080",
     "http://localhost",
+    "http://localhost:3000",
 ]
 
 app.add_middleware(

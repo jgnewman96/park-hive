@@ -1,8 +1,26 @@
 {
-    "functions": {
-        "backend_server/backend_server.py": {
-            "memory": 3008,
-            "includeFiles": "backend_server/*"
+    "builds": [
+        {
+            "src": "backend_server/backend_server.py",
+            "use": "@now/python"
         }
-    }
+    ],
+    "routes": [
+        {
+            "src": "/get_file",
+            "dest": "backend_server/backend_server.py"
+        },
+        {
+            "src": "/get_posts_by_medium",
+            "dest": "backend_server/backend_server.py"
+        },
+        {
+            "src": "/get_posts_by_subject",
+            "dest": "backend_server/backend_server.py"
+        },
+        {
+            "src": "/get_recent_posts",
+            "dest": "backend_server/backend_server.py"
+        }
+    ]
 }
