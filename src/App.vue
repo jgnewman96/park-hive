@@ -59,7 +59,7 @@ export default {
     pages: [],
     index: 0,
     viewMode: true,
-    backendUrl: "https://0.0.0.0:8100/",
+    backendUrl: "http://0.0.0.0:8100/",
     menuItems: [
       { name: "About This Project" },
       { name: "About Me" },

@@ -4,7 +4,7 @@ import PostsByMedium from '../pages/PostsByMedium'
 import PostsBySubject from '../pages/PostsBySubject'
 import AboutPage from '../pages/AboutPage'
 
-const backendUrl = "https://0.0.0.0:8100/"
+const backendUrl = "http://0.0.0.0:8100/"
 
 const routes = [
     {
