@@ -1,1 +1,1 @@
-web: gunicorn  --chdir backend_server  backend_server:app
+web: uvicorn --app-dir backend_server backend_server:app --host=0.0.0.0 --port=8100
