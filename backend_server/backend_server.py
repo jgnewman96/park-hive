@@ -17,7 +17,9 @@ app = FastAPI()
 directory = Directory.create_directory("writing_content")
 
 origins = [
-    "http://localhost:8080",
+    "https://localhost:8080",
+    "http://localhost",
+    "https://sheltered-plains-67814.herokuapp.com/",
 ]
 
 app.add_middleware(
