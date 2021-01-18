@@ -5,7 +5,7 @@ tags: []
 categories: ['personal']
 ---
 
-One of the biggest influences on my own thinking is the other writers that I am reading. This is not exclusive to the [books](/medium/book) I am reading. There are a lot of exceptional writers who do a lot of their writing online and never publish books. Writing on the internet often produces different types of content then would be published in a book. It can be less polished and does not have to be expansive in scope. It can speak to something narrow.
+One of the biggest influences on my own thinking is the other writers that I am reading. This is not exclusive to the [books](/#/medium/book) I am reading. There are a lot of exceptional writers who do a lot of their writing online and never publish books. Writing on the internet often produces different types of content then would be published in a book. It can be less polished and does not have to be expansive in scope. It can speak to something narrow.
 
 
 Since the end of 2019 I have maintained a [Spreadsheet](https://docs.google.com/spreadsheets/d/1LJM3EJrV8Gx8W0Hk-_i2BhHy1QEer_wZ91dlC22D7a8/edit?usp=sharing) of the articles I was reading that I really enjoyed. It provides an easy way for me to search back and find pieces when I want to reference them or send them to someone else.

@@ -9,30 +9,22 @@
             "use": "@now/python"
         }
     ],
-    "routes": [
+    "rewrites": [
         {
-            "src": "/get_file",
-            "dest": "backend_server/backend_server.py"
+            "source": "/get_file",
+            "destination": "backend_server/backend_server.py"
         },
         {
-            "src": "/get_posts_by_medium",
-            "dest": "backend_server/backend_server.py"
+            "source": "/get_posts_by_medium",
+            "destination": "backend_server/backend_server.py"
         },
         {
-            "src": "/get_posts_by_subject",
-            "dest": "backend_server/backend_server.py"
+            "source": "/get_posts_by_subject",
+            "destination": "backend_server/backend_server.py"
         },
         {
-            "src": "/get_recent_posts",
-            "dest": "backend_server/backend_server.py"
-        },
-        {
-            "handle": "filesystem"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/$1",
-            "continue": true
+            "source": "/get_recent_posts",
+            "destination": "backend_server/backend_server.py"
         }
     ]
 }
