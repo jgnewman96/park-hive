@@ -1,1 +1,1 @@
-web: python backend_server/start_server.py --host "0.0.0.0" --port 80
+web: gunicorn  --chdir backend_server  backend_server:app
