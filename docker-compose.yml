@@ -13,9 +13,9 @@ services:
       - "8100:8100"
   front-end:
     build: .
-    command: nginx -g 'daemon off';
+    command: yarn serve
 
     volumes:
       - './src:/src'
     ports:
-      - "8080:80"
+      - "8080:8080"
