@@ -18,8 +18,10 @@ directory = Directory.create_directory("writing_content")
 
 origins = [
     "https://localhost:8080",
+    "http://localhost:8080",
     "http://localhost",
     "https://sheltered-plains-67814.herokuapp.com/",
+    "https://sheltered-plains-67814.herokuapp.com",
 ]
 
 app.add_middleware(
