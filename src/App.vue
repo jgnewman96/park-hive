@@ -18,7 +18,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import RecentPosts from "./components/RecentPosts";
 import { useRoute } from "vue-router";
-import { watch, ref } from "vue";
+import { watch, computed } from "vue";
 
 export default {
   name: "app",
@@ -29,8 +29,21 @@ export default {
     RecentPosts,
   },
   setup() {
+    var goatcounter = document.createElement("script");
+    goatcounter.setAttribute(
+      "data-goatcounter",
+      "https://jgnewman.goatcounter.com/count"
+    );
+    goatcounter.setAttribute("async", "true");
+    goatcounter.setAttribute("allow_local", "true");
+    goatcounter.setAttribute("src", "https://srcrs.top/assets/js/count.js");
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(goatcounter, s);
+
     const route = useRoute();
-    const path_string = ref("");
+    const path_string = computed(() => {
+      return route.path.split("/").pop();
+    });
 
     const updateTitle = () => {
       path_string.value = route.path.split("/").pop();
@@ -38,22 +51,13 @@ export default {
         document.title = "Judah Newman's Archive - " + path_string.value;
       } else {
         document.title = "Judah Newman's Archive";
+        path_string.value = "/";
       }
+      console.log(window.goatcounter);
     };
 
-    watch(route, updateTitle);
+    watch(path_string, updateTitle);
     return { path_string, updateTitle };
-  },
-  mounted() {
-    var goatcounter = document.createElement("script");
-    goatcounter.setAttribute(
-      "data-goatcounter",
-      "https://jgnewman.goatcounter.com/count"
-    );
-    goatcounter.setAttribute("async", "true");
-    goatcounter.setAttribute("src", "https://srcrs.top/assets/js/count.js");
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(goatcounter, s);
   },
   data: () => ({
     pages: [],
