@@ -46,14 +46,12 @@ export default {
     });
 
     const updateTitle = () => {
-      path_string.value = route.path.split("/").pop();
       if (path_string.value) {
         document.title = "Judah Newman's Archive - " + path_string.value;
+        window.goatcounter.count({ path: location.pathname });
       } else {
         document.title = "Judah Newman's Archive";
-        path_string.value = "/";
       }
-      console.log(window.goatcounter);
     };
 
     watch(path_string, updateTitle);
