@@ -48,7 +48,9 @@ export default {
     const updateTitle = () => {
       if (path_string.value) {
         document.title = "Judah Newman's Archive - " + path_string.value;
-        window.goatcounter.count({ path: location.pathname });
+        if (window.goatcounter) {
+          window.goatcounter.count({ path: location.hash });
+        }
       } else {
         document.title = "Judah Newman's Archive";
       }
