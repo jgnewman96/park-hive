@@ -55,7 +55,6 @@ export default {
       post.value.data_published = value["metadata"]["date_published_str"];
       post.value.medium = value["metadata"]["medium"];
       post.value.subjects = value["metadata"]["subjects"];
-      console.log(post);
     };
 
     onMounted(getPost);
@@ -102,19 +101,39 @@ ul#subjects li {
   margin: 1px;
 }
 
-.sidenote {
-  float: right;
-  clear: right;
-  margin-right: -25%;
-  font-style: italic;
-  font-weight: normal;
-  width: 20%;
-  margin-top: 0.3rem;
-  margin-bottom: 0;
-  font-size: 0.9rem;
-  line-height: 1.2;
-  vertical-align: baseline;
-  position: relative;
-  color: black;
+@media screen and (min-width: 800px) {
+  .sidenote {
+    float: right;
+    clear: right;
+    margin-right: -30%;
+    font-style: italic;
+    font-weight: normal;
+    width: 25%;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    vertical-align: baseline;
+    position: relative;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sidenote {
+    float: right;
+    clear: right;
+    margin-right: -70%;
+    font-style: italic;
+    font-weight: normal;
+    width: 65%;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    vertical-align: baseline;
+    position: relative;
+    color: black;
+  }
 }
 </style>

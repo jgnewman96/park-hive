@@ -4,46 +4,45 @@
     <Header />
     <Menu @menu-selection="ProcessSelection" :menuItems="menuItems" />
 
-    <recent-posts id="recent_posts" :backendUrl="backendUrl" />
-    <router-view id="main_content" />
+    <recent-posts id="recent_posts" />
+    <recent-posts v-if="!path_string" id="recent_posts_mobile" />
 
-    <PageList
-      v-if="!viewMode"
-      @change-page="changePage"
-      @new-page="newPage"
-      :pages="pages"
-      :activePage="index"
-    />
-    <Page
-      v-if="!viewMode"
-      @save-page="savePage"
-      @delete-page="deletePage"
-      @update-title="updateTitle"
-      @update-content="updateContent"
-      :page="pages[index]"
-      :index="index"
-    />
+    <router-view id="main_content" />
     <Footer />
   </div>
 </template>
 
 <script>
-import PageList from "./components/PageList";
-import Page from "./components/Page";
 import Menu from "./components/Menu";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import RecentPosts from "./components/RecentPosts";
+import { useRoute } from "vue-router";
+import { watch, ref } from "vue";
 
 export default {
   name: "app",
   components: {
-    PageList,
-    Page,
     Menu,
     Header,
     Footer,
     RecentPosts,
+  },
+  setup() {
+    const route = useRoute();
+    const path_string = ref("");
+
+    const updateTitle = () => {
+      path_string.value = route.path.split("/").pop();
+      if (path_string.value) {
+        document.title = "Judah Newman's Archive - " + path_string.value;
+      } else {
+        document.title = "Judah Newman's Archive";
+      }
+    };
+
+    watch(route, updateTitle);
+    return { path_string, updateTitle };
   },
   mounted() {
     var goatcounter = document.createElement("script");
@@ -55,7 +54,6 @@ export default {
     goatcounter.setAttribute("src", "https://srcrs.top/assets/js/count.js");
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(goatcounter, s);
-    document.title = "Judah Newman's Archive";
   },
   data: () => ({
     pages: [],
@@ -71,40 +69,8 @@ export default {
     ],
   }),
   methods: {
-    newPage() {
-      this.pages.push({
-        title: "",
-        content: "",
-      });
-      this.index = this.pages.length - 1;
-    },
-    changePage(index) {
-      this.index = index;
-    },
-    getPage(index) {
-      console.log(index);
-    },
-    updateTitle(title) {
-      this.pages[this.index].title = title;
-    },
-    updateContent(content) {
-      this.pages[this.index].content = content;
-    },
-    switchMode() {
-      this.viewMode = !this.viewMode;
-    },
-    savePage() {
-      // nothing as of yet
-    },
-    deletePage() {
-      this.pages.splice(this.index, 1);
-      this.index = Math.max(this.index - 1, 0);
-    },
     ProcessSelection(itemSelected) {
-      console.log(itemSelected);
-      if (itemSelected === "Switch Modes") {
-        this.switchMode();
-      } else if (itemSelected === "Books") {
+      if (itemSelected === "Books") {
         this.$router.push({ path: "/medium/" + "book" });
       } else if (itemSelected === "Academic Papers") {
         this.$router.push({ path: "/medium/" + "paper" });
@@ -136,19 +102,46 @@ body {
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
 }
-#recent_posts {
-  position: absolute;
-  top: 200px;
-  width: 20%;
+
+@media screen and (min-width: 800px) {
+  #recent_posts {
+    position: absolute;
+    top: 200px;
+    width: 20%;
+  }
 }
 
-#main_content {
-  width: 70%;
-  position: relative;
-  left: 20%;
-  margin-top: 1%;
-  border-right: 4px solid #124653;
-  border-left: 4px solid #124653;
-  padding: 1%;
+@media screen and (max-width: 800px) {
+  #recent_posts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #recent_posts_mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #main_content {
+    width: 60%;
+    position: relative;
+    left: 20%;
+    margin-top: 1%;
+    border-right: 4px solid #124653;
+    border-left: 4px solid #124653;
+    padding: 1%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #main_content {
+    width: 70%;
+    position: relative;
+    left: 2%;
+    margin-top: 1%;
+    padding: 1%;
+  }
 }
 </style>

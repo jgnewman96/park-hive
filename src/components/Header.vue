@@ -38,7 +38,7 @@ export default {
   background: #5c946e;
   color: white;
   font-size: 35px;
-  width: 100%;
+  width: 95%;
   position: relative;
 }
 
@@ -46,7 +46,7 @@ ul#icon_links {
   display: inline;
   list-style-type: none;
   position: absolute;
-  left: 78%;
+  left: 68%;
   top: 0%;
 }
 
