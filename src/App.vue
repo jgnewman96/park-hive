@@ -44,6 +44,17 @@ export default {
     watch(route, updateTitle);
     return { path_string, updateTitle };
   },
+  mounted() {
+    var goatcounter = document.createElement("script");
+    goatcounter.setAttribute(
+      "data-goatcounter",
+      "https://jgnewman.goatcounter.com/count"
+    );
+    goatcounter.setAttribute("async", "true");
+    goatcounter.setAttribute("src", "https://srcrs.top/assets/js/count.js");
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(goatcounter, s);
+  },
   data: () => ({
     pages: [],
     index: 0,
