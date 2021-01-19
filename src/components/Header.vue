@@ -46,7 +46,7 @@ ul#icon_links {
   display: inline;
   list-style-type: none;
   position: absolute;
-  left: 68%;
+  left: 78%;
   top: 0%;
 }
 
