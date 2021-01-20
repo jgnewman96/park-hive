@@ -38,6 +38,7 @@ export default {
   setup(props) {
     const { markdownFile } = toRefs(props);
     const converter = new showdown.Converter();
+
     const post = ref([]);
 
     const axios_client = axios.create({

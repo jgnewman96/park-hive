@@ -43,6 +43,7 @@ class Subject(MultiValueEnum):
     SCIENCEFICTION = ("science fiction", "science_fiction")
     NONFICTION = ("non-fiction", "non fiction")
     REFLECTION = ("reflection", "reflections")
+    RESOURCE = "resource"
 
 
 class PostMetaData(BaseModel):
