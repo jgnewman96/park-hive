@@ -1,7 +1,7 @@
 import os
 from datetime import date
 from enum import Enum
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional, Tuple
 
 import frontmatter
 from aenum import MultiValueEnum
@@ -73,12 +73,29 @@ class PostMetaData(BaseModel):
 class Post(BaseModel):
     file_path: str
     link_path: str
+    image_path: Optional[str]
     metadata: PostMetaData
 
 
 class Directory:
-    def __init__(self, posts: Dict[str, Post]):
+    def __init__(self, posts: Dict[str, Post], current_books):
         self.posts = posts
+        self.current_books = current_books
+
+    def get_book_images(
+        self,
+    ) -> List[Tuple[str, str]]:
+        book_images_dict: Dict[str, List[str]] = {"CURRENT": self.current_books}
+        for _, post in self.posts.items():
+            if post.metadata.medium == Medium.BOOK and post.image_path:
+                year = post.metadata.date_published.year
+                book_images_dict[year] = book_images_dict.get(year, []) + [
+                    post.image_path
+                ]
+            else:
+                continue
+
+        return list(book_images_dict.items())
 
     def get_post_by_link_path(self, link_path: str) -> Post:
         return self.posts[link_path]
@@ -100,15 +117,39 @@ class Directory:
         return posts
 
     @staticmethod
-    def create_directory(base_dir: str) -> "Directory":
+    def create_directory(writing_dir: str, book_image_dir: str) -> "Directory":
 
-        posts = Directory._parse_files(base_dir)
+        posts = Directory._parse_files(writing_dir)
+        book_images, current_books = Directory._parse_book_images(book_image_dir)
 
         # sorting posts by when they were written in descending order
         posts = sorted(posts, key=lambda x: x.metadata.date_published, reverse=True)
         posts_dict = {p.link_path: p for p in posts}
 
-        return Directory(posts_dict)
+        for post_link, post in posts_dict.items():
+            if post.metadata.medium == Medium.BOOK:
+                try:
+                    post.image_path = book_images[post_link]
+                except KeyError:
+                    print(f"Could not find Image for {post_link}", flush=True)
+                    continue
+
+        return Directory(posts_dict, current_books)
+
+    @staticmethod
+    def _parse_book_images(directory: str) -> Tuple[List[str], List[str]]:
+        files = os.listdir(directory)
+        book_images: Dict[str, str] = {}
+        current_books: List[str] = []
+        for file in files:
+            year_path = os.path.join(directory, file)
+            for img in os.listdir(year_path):
+                if file == "current":
+                    current_books.append(os.path.join(year_path, img))
+                else:
+                    book_images[img.split(".")[0]] = os.path.join(year_path, img)
+
+        return book_images, current_books
 
     @staticmethod
     def _parse_files(directory: str) -> List[Post]:

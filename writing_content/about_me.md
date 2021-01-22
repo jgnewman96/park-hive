@@ -36,7 +36,7 @@ I was a Machine Learning and Data Engineer at [Change Research](https://changere
 - Leaving Change Research - __forthcoming__
 - Change Research Brag Document - __forthchoming__
 - [Reflection on Election Season](#/post/reflections_on_election_season)
-- [FB Pricing Model](http://localhost:3000/#/post/CR_fb_pricing_model)
+- [FB Pricing Model](#/post/CR_fb_pricing_model)
 
 **Nielsen**
 

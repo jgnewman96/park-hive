@@ -25,6 +25,10 @@
         {
             "source": "/get_recent_posts",
             "destination": "backend_server/backend_server.py"
+        },
+        {
+            "source": "/get_book_images",
+            "destination": "backend_server/backend_server.py"
         }
     ]
 }
