@@ -37,7 +37,8 @@ export default {
   props: ["markdownFile"],
   setup(props) {
     const { markdownFile } = toRefs(props);
-    const converter = new showdown.Converter();
+
+    const converter = new showdown.Converter({ parseImgDimensions: true });
 
     const post = ref([]);
 

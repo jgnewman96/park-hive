@@ -7,17 +7,35 @@
     <ul id="icon_links">
       <li>
         <a href="https://github.com/jgnewman96">
-          <img border="0" src="../../img/gh.jpg" width="30" height="30" />
+          <img
+            border="0"
+            src="../../img/gh.jpg"
+            width="30"
+            height="30"
+            alt="Github"
+          />
         </a>
       </li>
       <li>
         <a href="https://github.com/jgnewman96">
-          <img border="0" src="../../img/li.jpg" width="30" height="30" />
+          <img
+            border="0"
+            src="../../img/li.jpg"
+            width="30"
+            height="30"
+            alt="Linkedin"
+          />
         </a>
       </li>
       <li>
         <a href="mailto:judah.newman@gmail.com">
-          <img border="0" src="../../img/mail.jpg" width="30" height="30" />
+          <img
+            border="0"
+            src="../../img/mail.jpg"
+            width="30"
+            height="30"
+            alt="Email"
+          />
         </a>
       </li>
     </ul>
