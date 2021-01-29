@@ -26,3 +26,4 @@ categories: ['personal']
 * [James Baldwin](https://en.wikipedia.org/wiki/James_Baldwin)
 * [Haruki Marukami](https://www.harukimurakami.com/)
 * [Keeanga-Yamahtta Taylor](http://www.keeangataylor.com/)
+* [Jiayang Fan](https://www.newyorker.com/contributors/jiayang-fan)

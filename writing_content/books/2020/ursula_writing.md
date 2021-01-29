@@ -15,20 +15,20 @@ It has been a revelation for me writing some science fiction as an adult. Growin
 
 ## Quotes
 
-{{< quote >}}
-And imagination, to her, is not something we merely do in our spare moments, an idle act, but the very faculty that makes us who we are.
-{{< /quote >}}
 
-{{< quote >}}
-“We can’t restructure society without restructuring the English language.” That the battle is essentially as much at the sentence level as it is in the world.
-{{< /quote >}}
+> And imagination, to her, is not something we merely do in our spare moments, an idle act, but the very faculty that makes us who we are.
+
+<!-- -->
 
 
-{{< quote >}}
-She said it is often difficult in any given moment or instance to know whether sexism is happening but if you step back and look at the way the canon is being formed—in this case we were talking about the canon in science fiction and fantasy—it becomes clearer.
-{{< /quote >}}
+> “We can’t restructure society without restructuring the English language.” That the battle is essentially as much at the sentence level as it is in the world.
+
+<!-- -->
 
 
-{{< quote >}}
-“We can’t restructure society without restructuring the English language.” That the battle is essentially as much at the sentence level as it is in the world.
-{{< /quote >}}
+> She said it is often difficult in any given moment or instance to know whether sexism is happening but if you step back and look at the way the canon is being formed—in this case we were talking about the canon in science fiction and fantasy—it becomes clearer.
+
+
+<!-- -->
+
+> “We can’t restructure society without restructuring the English language.” That the battle is essentially as much at the sentence level as it is in the world.
