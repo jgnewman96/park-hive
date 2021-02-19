@@ -34,7 +34,7 @@ I am currently the first data scientist at [Whisper](https://whisper.ai/) helpin
 
 I was a Machine Learning and Data Engineer at [Change Research](https://changeresearch.com/) from November 2019 - January 2021. Here is some writing about my time at Change Research:
 - Leaving Change Research - __forthcoming__
-- Change Research Brag Document - __forthchoming__
+- [Change Research Brag Document](#/post/cr_brag_document)
 - [Reflection on Election Season](#/post/reflections_on_election_season)
 - [FB Pricing Model](#/post/CR_fb_pricing_model)
 
