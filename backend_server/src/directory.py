@@ -34,6 +34,7 @@ class Subject(MultiValueEnum):
     MINDFULNESS = "mindfulness"
     HOUSINGPOLICY = ("housing policy", "housing_policy")
     LEGALPOLICY = ("legal policy", "legal_policy")
+    LABORPOLICY = ("labor_policy", "labor policy")
     TECHPOLICY = ("tech policy", "tech_policy")
     TRANSPORTATIONPOLICY = ("transportation policy", "transporation_policy")
     AIPOLICY = ("ai policy", "ai_policy")
