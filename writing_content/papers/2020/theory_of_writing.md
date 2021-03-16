@@ -72,7 +72,7 @@ I really appreciate that they use their model as a starting point for further re
 > A model such as the one presented here is first and foremost a tool for researchers to think with. By giving a testable shape and definition to our observations, we have tried to pose new questions to be answered.
 
 
-Earlier this year I read the [*Art of Learning*]({{< ref  "/writing/books/2020/A_of_learning.md"  >}}) by Josh Waitzkin. The following quote reminded me of something Waitzkin talks about.
+Earlier this year I read the [*Art of Learning*](/#/post/the_art_of_learning) by Josh Waitzkin. The following quote reminded me of something Waitzkin talks about.
 
 > If the writer must devote conscious attention to demands such as spelling and grammar, the task of translating can interfere with the more global process of planning what one wants to say.
 

@@ -33,9 +33,11 @@ Regular Internet Reading 
 
 **Research**
 
+* [Andy Matuschak ](https://andymatuschak.org/) ($5 a month)
 * [The Morning Paper](https://blog.acolyer.org/): Adrian Colyer
 * [Emily Oster](https://emilyoster.substack.com/)
 * [Import AI](https://jack-clark.net/) Jack Clark
+
 
 **Essays**
 
@@ -53,5 +55,6 @@ Regular Internet Reading 
 * [Sidewalk Weekly](https://www.sidewalklabs.com/blog/the-sidewalk-weekly-newsletter-archive/)
 * [Nesta Newsletter](https://www.nesta.org.uk/newsletter/)
 * [Stephen Wolfram](https://writings.stephenwolfram.com/)
+* [Roots of Progress](https://rootsofprogress.org/): Jason Crawford
 
 
