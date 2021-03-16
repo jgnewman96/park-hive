@@ -29,6 +29,7 @@ export default {
     RecentPosts,
   },
   setup() {
+    document.title = "Judah Newman";
     var goatcounter = document.createElement("script");
     goatcounter.setAttribute(
       "data-goatcounter",
