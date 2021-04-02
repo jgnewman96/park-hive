@@ -20,6 +20,7 @@ Regular Internet Reading 
 * [Eugene Wei](https://eugenewei.substack.com/)
 * [Exponential View](https://www.exponentialview.co/): Azeem Azhar ($85 a year)
 * [Casey Newton](https://www.platformer.news/) ($100 a year)
+* [Markets Weekly](https://marketsweekly.ghost.io/): Alexis Goldstein ($150 a year)
 
 **Tech**
 
