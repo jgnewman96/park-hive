@@ -15,7 +15,12 @@
               <li v-for="subject in item.metadata.subjects" :key="subject.id">
                 <router-link
                   :to="`/subject/${subject}`"
-                  style="background-color: #5c946e; color: white; padding: 1px"
+                  style="
+                    background-color: #5c946e;
+                    color: white;
+                    padding: 5px;
+                    font-size: 10px;
+                  "
                   >{{ subject }}</router-link
                 >
               </li>
@@ -26,12 +31,21 @@
             📚
             <router-link
               :to="`/medium/${item.metadata.medium}`"
-              style="background-color: #485665; color: white; padding: 3px"
+              style="
+                background-color: #485665;
+                color: white;
+                padding: 5px;
+                font-size: 10px;
+              "
             >
               {{ item.metadata.medium }}
             </router-link>
           </li>
-          <li>🗓 {{ item.metadata.date_published_str }}</li>
+          <li>
+            <p style="font-size: 10px">
+              🗓 {{ item.metadata.date_published_str }}
+            </p>
+          </li>
         </ul>
       </li>
     </ul>

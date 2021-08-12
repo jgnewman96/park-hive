@@ -51,12 +51,14 @@ export default {
 
 <style>
 #header {
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
   text-align: left;
   background: #5c946e;
   color: white;
   font-size: 35px;
-  width: 95%;
+  width: 99%;
   position: relative;
 }
 
@@ -64,7 +66,7 @@ ul#icon_links {
   display: inline;
   list-style-type: none;
   position: absolute;
-  left: 78%;
+  left: 85%;
   top: 0%;
 }
 

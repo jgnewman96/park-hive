@@ -9,13 +9,23 @@
 
         <ul id="book_list">
           <li v-for="book in year[1]" :key="book.id">
-            <template v-if="year[0] !== `CURRENT`">
-              <router-link :to="getLinkfromImg(book)">
-                <img border="0" padding="5" :src="getImgUrl(book)" width="80" />
+            <template v-if="(year[0] !== `CURRENT`) & book[1]">
+              <router-link :to="getLinkfromImg(book[0])">
+                <img
+                  border="0"
+                  padding="5"
+                  :src="getImgUrl(book[0])"
+                  width="80"
+                />
               </router-link>
             </template>
             <template v-else>
-              <img border="0" padding="5" :src="getImgUrl(book)" width="80" />
+              <img
+                border="0"
+                padding="5"
+                :src="getImgUrl(book[0])"
+                width="80"
+              />
             </template>
           </li>
         </ul>

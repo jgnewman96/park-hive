@@ -53,6 +53,7 @@ class PostMetaData(BaseModel):
     date_published_str: str
     medium: Medium
     subjects: List[Subject]
+    has_text: bool = True
 
     @staticmethod
     def parse_frontmatter(frontmatter: Dict[str, Any]) -> "PostMetaData":
@@ -68,6 +69,7 @@ class PostMetaData(BaseModel):
             date_published_str=date_published_str,
             medium=medium,
             subjects=subjects,
+            has_text=frontmatter.get("has_text", True),
         )
 
 
@@ -79,19 +81,24 @@ class Post(BaseModel):
 
 
 class Directory:
-    def __init__(self, posts: Dict[str, Post], current_books):
+    def __init__(
+        self, posts: Dict[str, Post], book_images_by_year: Dict[str, List[str]]
+    ):
         self.posts = posts
-        self.current_books = current_books
+        self.book_images_by_year = book_images_by_year
 
     def get_book_images(
         self,
     ) -> List[Tuple[str, str]]:
-        book_images_dict: Dict[str, List[str]] = {"CURRENT": self.current_books}
+
+        book_images_dict: Dict = {
+            "CURRENT": [(img, False) for img in self.book_images_by_year["current"]]
+        }
         for _, post in self.posts.items():
             if post.metadata.medium == Medium.BOOK and post.image_path:
                 year = post.metadata.date_published.year
                 book_images_dict[year] = book_images_dict.get(year, []) + [
-                    post.image_path
+                    (post.image_path, post.metadata.has_text)
                 ]
             else:
                 continue
@@ -102,18 +109,26 @@ class Directory:
         return self.posts[link_path]
 
     def get_posts_by_medium(self, medium: str) -> List[Post]:
-        return [p for _, p in self.posts.items() if p.metadata.medium.value == medium]
+        return [
+            p
+            for _, p in self.posts.items()
+            if p.metadata.medium.value == medium and p.metadata.has_text
+        ]
 
     def get_posts_by_subject(self, subject: str) -> List[Post]:
         return [
-            p for _, p in self.posts.items() if Subject(subject) in p.metadata.subjects
+            p
+            for _, p in self.posts.items()
+            if Subject(subject) in p.metadata.subjects and p.metadata.has_text
         ]
 
     def get_recent_posts(self, number_of_posts: int) -> List[Post]:
         posts = []
-        for i, key in enumerate(self.posts):
-            posts.append(self.posts[key])
-            if i == number_of_posts:
+
+        for key in self.posts:
+            if self.posts[key].metadata.has_text:
+                posts.append(self.posts[key])
+            if len(posts) == number_of_posts:
                 break
         return posts
 
@@ -121,7 +136,9 @@ class Directory:
     def create_directory(writing_dir: str, book_image_dir: str) -> "Directory":
 
         posts = Directory._parse_files(writing_dir)
-        book_images, current_books = Directory._parse_book_images(book_image_dir)
+        book_images_by_name, book_images_by_year = Directory._parse_book_images(
+            book_image_dir
+        )
 
         # sorting posts by when they were written in descending order
         posts = sorted(posts, key=lambda x: x.metadata.date_published, reverse=True)
@@ -130,27 +147,28 @@ class Directory:
         for post_link, post in posts_dict.items():
             if post.metadata.medium == Medium.BOOK:
                 try:
-                    post.image_path = book_images[post_link]
+                    post.image_path = book_images_by_name[post_link]
                 except KeyError:
                     print(f"Could not find Image for {post_link}", flush=True)
                     continue
 
-        return Directory(posts_dict, current_books)
+        return Directory(posts_dict, book_images_by_year)
 
     @staticmethod
-    def _parse_book_images(directory: str) -> Tuple[List[str], List[str]]:
+    def _parse_book_images(directory: str) -> Tuple[Dict, Dict]:
         files = os.listdir(directory)
-        book_images: Dict[str, str] = {}
+        book_images_by_name: Dict[str, str] = {}
+        book_images_by_year: Dict[str, List[Tuple[str, float]]] = {}
         current_books: List[str] = []
         for file in files:
             year_path = os.path.join(directory, file)
             for img in os.listdir(year_path):
-                if file == "current":
-                    current_books.append(os.path.join(year_path, img))
-                else:
-                    book_images[img.split(".")[0]] = os.path.join(year_path, img)
-
-        return book_images, current_books
+                book_images_by_name[img.split(".")[0]] = os.path.join(year_path, img)
+                full_file_path = os.path.join(year_path, img)
+                book_images_by_year[file] = book_images_by_year.get(file, []) + [
+                    full_file_path
+                ]
+        return book_images_by_name, book_images_by_year
 
     @staticmethod
     def _parse_files(directory: str) -> List[Post]:
