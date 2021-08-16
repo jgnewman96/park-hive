@@ -6,10 +6,10 @@
       :menu-data="menuItems"
       :on-selected="handleSelection"
       :theme="{
-        primary: '#485665',
+        primary: 'var(--third-color)',
         textColor: '#000',
         menuBgColor: '#fff',
-        textSelectedColor: '#ffb5c2',
+        textSelectedColor: 'var(--border-color)',
       }"
     >
       Menu

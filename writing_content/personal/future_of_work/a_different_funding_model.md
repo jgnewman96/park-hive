@@ -98,4 +98,4 @@ Projects that are funded using the above model have different incentives then th
 What would Facebook or Google look like if they were not so focused on growth and monetization but rather on delivering value to users? Switching these incentives is essential for building a society that is not focused on revenue, profit and prestige.  
 
 
-_Thanks to Tushar Chandra, Madison Moore, Holly Ormseth, Dan Pfiel, Jenny Wang and  Stephan Zerfas for feedback and discussions related to the ideas in this post_
+_Thanks to Tushar Chandra, Madison Moore, Holly Ormseth, Dan Pfiel, Jenny Wang and  Stephan Zerfas for feedback and discussions related to the ideas in this post_g

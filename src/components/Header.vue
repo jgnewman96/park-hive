@@ -55,7 +55,7 @@ export default {
   padding-bottom: 30px;
   padding-left: 20px;
   text-align: left;
-  background: #5c946e;
+  background: var(--header-color);
   color: white;
   font-size: 35px;
   width: 99%;

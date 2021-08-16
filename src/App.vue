@@ -94,6 +94,14 @@ export default {
 </script>
 
  <style>
+:root {
+  --header-color: #b1a8c7;
+  --second-color: #38726c;
+  --third-color: #a44a3f;
+  --quote-color: #feffd6;
+  --border-color: #392b58;
+}
+
 html,
 body,
 #app {
@@ -134,8 +142,8 @@ body {
     position: relative;
     left: 20%;
     margin-top: 1%;
-    border-right: 4px solid #124653;
-    border-left: 4px solid #124653;
+    border-right: 4px solid var(--border-color);
+    border-left: 4px solid var(--border-color);
     padding: 1%;
   }
 }

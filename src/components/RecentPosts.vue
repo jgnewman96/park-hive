@@ -16,7 +16,7 @@
                 <router-link
                   :to="`/subject/${subject}`"
                   style="
-                    background-color: #5c946e;
+                    background-color: var(--header-color);
                     color: white;
                     padding: 5px;
                     font-size: 10px;
@@ -32,7 +32,7 @@
             <router-link
               :to="`/medium/${item.metadata.medium}`"
               style="
-                background-color: #485665;
+                background-color: var(--third-color);
                 color: white;
                 padding: 5px;
                 font-size: 10px;

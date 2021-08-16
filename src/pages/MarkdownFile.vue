@@ -8,7 +8,11 @@
         <li v-for="item in post.subjects" :key="item.id">
           <router-link
             :to="`/subject/${item}`"
-            style="background-color: #5c946e; color: white; padding: 1px"
+            style="
+              background-color: var(--header-color);
+              color: white;
+              padding: 1px;
+            "
             >{{ item }}</router-link
           >
         </li>
@@ -17,7 +21,7 @@
       📚
       <router-link
         :to="`/medium/${post.medium}`"
-        style="background-color: #485665; color: white; padding: 3px"
+        style="background-color: var(--third-color); color: white; padding: 3px"
       >
         {{ post.medium }} </router-link
       ><br />
@@ -69,7 +73,7 @@ export default {
 
 <style>
 blockquote {
-  background-color: #fcf0c5;
+  background-color: var(--quote-color);
   border-width: 1px;
   border-style: solid;
   border-left: 1px solid;
@@ -84,7 +88,7 @@ blockquote {
 .header {
   padding: 10px;
   text-align: left;
-  background: #7cc6fe;
+  background: var(--second-color);
   color: white;
   font-size: 15px;
   text-transform: capitalize;
