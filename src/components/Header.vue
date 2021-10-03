@@ -17,7 +17,7 @@
         </a>
       </li>
       <li>
-        <a href="https://github.com/jgnewman96">
+        <a href="https://www.linkedin.com/in/jgnewman96/">
           <img
             border="0"
             src="../../img/li.jpg"
