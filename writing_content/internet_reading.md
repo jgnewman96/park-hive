@@ -18,8 +18,12 @@ Regular Internet Reading 
 * [Stratechery](https://stratechery.com/): Ben Thompson ($120 a year)
 * [Matthew Ball](https://www.matthewball.vc/)
 * [Eugene Wei](https://eugenewei.substack.com/)
-* [Casey Newton](https://www.platformer.news/) ($100 a year)
-* [Markets Weekly](https://marketsweekly.ghost.io/): Alexis Goldstein ($150 a year)
+
+**Blockchain**
+
+* [Bankless Dao](https://www.bankless.community/) 
+* [Vitalik Buterin](https://vitalik.ca/index.html)
+
 
 **Tech**
 
@@ -28,7 +32,8 @@ Regular Internet Reading 
 * [Will Larson](https://lethain.com/)
 * [Tushar Chandra](https://tusharc.dev/)
 * [Fast AI](https://www.fast.ai/) : Rachel Thomas & Jeremy Howard
-* [Zeynep Tufekci](https://zeynep.substack.com/) ($100 a year)
+* [Zeynep Tufekci](https://zeynep.substack.com/)
+* [Every](https://every.to/) ($200 a year)
 
 **Research**
 
@@ -57,5 +62,7 @@ Regular Internet Reading 
 * [Exponential View](https://www.exponentialview.co/): Azeem Azhar 
 * [Emily Oster](https://emilyoster.substack.com/)
 * [Lenny Rachitsky](https://www.lennyrachitsky.com/)
+* [Casey Newton](https://www.platformer.news/) 
+* [Markets Weekly](https://marketsweekly.ghost.io/): Alexis Goldstein 
 
 
