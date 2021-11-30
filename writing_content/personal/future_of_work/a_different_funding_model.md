@@ -45,7 +45,7 @@ While having a job in academia is quite desirable for the reasons I listed above
 
 I also find research papers to be an unsatisfactory final product for a project. The majority of research papers are inaccessible and written for a very narrow audience. Since incentives in academia are tied to research papers, that is often where work ends. This means that academic research is far away from actual implementation. Researchers themselves often do not implement their ideas but are reliant on someone else reading their paper and pushing their work forward. Academic prestige is therefore not necessarily based on impact on society, but rather what other people in that small community think of your work. 
 
-I mentioned earlier that I do not want to be working in the exploit phase, but there are a lot of desirable traits that have been developed in the exploit phase that are not present in academia. Companies in the exploit phase** **usually have an intense focus on the end user and delivering something that is impactful. No matter what type of work I am doing, I want to be focused on the impact of my work and making it as accessible to others as possible. 
+I mentioned earlier that I do not want to be working in the exploit phase, but there are a lot of desirable traits that have been developed in the exploit phase that are not present in academia. Companies in the exploit phase usually have an intense focus on the end user and delivering something that is impactful. No matter what type of work I am doing, I want to be focused on the impact of my work and making it as accessible to others as possible. 
 
 Having spent time now working in both academia and industry (at both large companies and small companies) neither feels like it is a perfect fit. I want to be doing work in the explore phase, but still be thinking about users and directly pushing the impact of my work forward. I do not want to be spending my time thinking about how to extract value from users and how to deliver a return on an investment. 
 
@@ -98,4 +98,4 @@ Projects that are funded using the above model have different incentives then th
 What would Facebook or Google look like if they were not so focused on growth and monetization but rather on delivering value to users? Switching these incentives is essential for building a society that is not focused on revenue, profit and prestige.  
 
 
-_Thanks to Tushar Chandra, Madison Moore, Holly Ormseth, Dan Pfiel, Jenny Wang and  Stephan Zerfas for feedback and discussions related to the ideas in this post_g
+_Thanks to Tushar Chandra, Madison Moore, Holly Ormseth, Dan Pfiel, Jenny Wang and  Stephan Zerfas for feedback and discussions related to the ideas in this post_
