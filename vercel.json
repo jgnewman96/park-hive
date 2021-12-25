@@ -6,7 +6,7 @@
         },
         {
             "src": "backend_server/backend_server.py",
-            "use": "@now/python"
+            "use": "@vercel/python"
         }
     ],
     "rewrites": [
