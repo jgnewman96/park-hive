@@ -86,3 +86,5 @@ So how does this new model try to improve upon what Substack has done?
 I started this piece talking about Substack and writers, but it might be clear from my language that I think this DAO structure applies to more than just writers. I believe it could work for many different types of work. It could apply to artists, filmmakers, or even researchers.
 
 Using tokens to coordinate ownership does not inherently lead to better results. It is critical for the DAO to find a token mechanism that works for their project and goals. In the DAO space there will be trial and error with different structures and the correct structure for different projects will look different. Hopefully though, using tokens can allow for new organizations that create better alignment with the creators and the people who value their work. This alignment hopefully improves the work lives of the people in the DAO by providing a financially stable way for them to work on projects that are meaningful and rewarding.
+
+__Thanks to Nate Jones, Abby Miller, Holly Ormseth and Jenny Wang for discussions related to and feedback on this post.__
