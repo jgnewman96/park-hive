@@ -5,42 +5,34 @@ tags: []
 categories: ['personal']
 ---
 
-Since graduating from my undergraduate studies I have not formally been conducting research. The project I have worked on the most is this [website](/). The main way that I interact with academic research currently is through reading papers. I really enjoy reading academic papers and staying up to date on current trends.
+## Current Projects
 
-It is necessary to consume lots of other researcher to be a good researcher. Any piece of research is not done in isolation but in dialogue with what came before it. Reading research only does so much, but finding weak points and expanding upon it can be illuminating. When I read a paper, I try to engage deeply with it. Here are some of the questions I always ask myself.
-- What are the major contributions of this paper?
-- What motivated the ideas in this paper?
-- Which parts of the paper am I skeptical of?
-- What makes this a good paper and how could it be improved?
-- How would I build upon this research?
+### Repeated Generator
 
-## Reading Group
+I am currently working on a project centered on writing and generating new ideas. Check out [repeated generator](https://repeatedgenerator.netlify.app/) for more details.
 
-One of the most compelling parts of doing research is the community that you get to be apart of. It is exciting to talk about research with colleagues and hear their opinions. Their thoughts will push you to expand your own thinking and look at problems from different perspectives. Trying to create our own community, my friend [Tushar](https://tusharc.dev/) and I have created our own reading group. We read one research paper a week and then discuss it every friday. We try to read papers from a diverse set of fields and build our own research skills. Each of us then summarizes the paper and adds our own thoughts. You can read [Tushar's notes here](https://tusharc.dev/categories/papers.html) and mine [here](/#/medium/paper). We generally read about topics in social computing and applied machine learning. We select papers to read in the following way.
+### Future of Organizations
+
+I have been doing some thinking about how funding impacts work and what new types of organizations could look like. Here is the series of posts I have written on the topic.
+* [Incentives and Funding Models](#/post/diversity_in_funding_models)
+* [The Current Funding Situation](#/post/a_different_funding_model)
+* [Substack Limitatons and DAO Possibilities](#/post/substack_limitations_and_dao_possibilities)
+
+## Previous Projects
+
+
+### Applied ML Reading Group
+
+One of the most compelling parts of doing academic research is the community that you get to be apart of. It is exciting to talk about research with colleagues and hear their opinions. Their thoughts push you to expand your own thinking and look at problems from different perspectives. Trying to create our own community, my friend [Tushar](https://tusharc.dev/) and I created an applied ML reading group. We read one research paper a week and then discussed it every friday. 
+
+The questions we were most interested in were how do we integrate technology with society. How do we understand the impacts that technology is having on individuals. Technology in general, but Machine Learning and AI specifically are radically changing what our world looks like. There is both the positive and the negative of these changes. By focusing on designing tools that brings about the world we want, we should be able to tilt the scales towards positive outcomes. That will require lots of careful research and deep understanding.
+
+We believe more work needs to be done that bridges the gap between pure academic research and industry. There is so much knowledge that gets created in academia that does not get brought out to the rest of the world. The creation of the knowledge is not enough, it has to be disseminated and made accessible. Their should be more outputs by which research is measured then just academic papers. Writing blog posts, building a tool or creating community can often be just as impactful as a paper. I love building intuitive software that is accessible to others.
+
+After reading each paper both of us summarized the paper and added some of our own thoughts. You can read [Tushar's notes here](https://tusharc.dev/categories/papers.html) and mine [here](/#/medium/paper). We selected papers to read in the following way.
 - One of us sends five paper options to the other person
 - The other person then picks from those five options.
 
-If you are interested in joining our reading group or coming to one of our discussions reach out to either Me or Tushar!
-
-Me and my friend [Tushar](https://tusharc.dev/) read one research paper a week and then discuss it. On this website I will summarize the paper and write some of my own thoughts about it. It is important to read research papers from a diverse set of fields. By reading other research papers we also learn what good research looks like and how to best communicate findings. You can view all of the papers that I am reading and my thoughts about them
-
-
-## Research Interests
-
-I would define my research interests broadly as Applied Machine Learning and AI. The questions I am most interested in are how do we integrate technology with society. How do we understand the impacts that technology is having on individuals. I find it powerful to have a continual focus on the people that our research is going to impact. Who are the concrete individuals that are impacted by what you are studying and how so? Technology in general, but Machine Learning and AI specifically are radically changing what our world looks like. There is both the positive for a lot of negative and positive in these changes. By focusing on designing tool that brings about the world we want, we should be able to tilt the scales towards positive outcomes. That will require lots of careful research and deep understanding.
-
-I believe more work needs to be done the bridges the gap between pure academic research and industry. There is so much knowledge that gets created in academia that does not get brought out to the rest of the world. The creation of the knowledge is not enough, it has to be disseminated and made accessible. I believe their should be more outputs by which research is measured then just academic papers. Writing a blog posts, building a tool or community can often be just as impactful as a paper. I love building intuitive software that is accessible to others.
-
-Some particular spaces that I find very compelling
-- ML and AI Fairness
-- Recommendation Systems
-- Causal Inference
-- Reinforcement Learning
-- Simulations
-- Climate Change
-- Health
-
-## Previous Research
 
 #### Human Computer Interaction + Machine Learning
 

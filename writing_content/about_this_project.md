@@ -5,6 +5,8 @@ tags: []
 categories: ['personal']
 ---
 
+**Check out [repeated generator](https://repeatedgenerator.netlify.app/) for what I am working on in 2022**
+
 The seeds for this project were planted when I was graduating college. I was looking for a way to express myself. I had ideas swirling around in my head but no where to put them. I wanted to write more and also publish my ideas. I was drawn to the idea of starting a blog. I began writing some posts on Medium and explored different structures with my partner Jenny. Here is [our first post](https://medium.com/the-fox-and-the-hedgehog/why-blog-11a7a0c166ef) written in 2018 right after we graduated college explaining why we wanted to blog. We proceeded to [publish a few more posts](https://medium.com/the-fox-and-the-hedgehog) exploring what was on our minds the summer after we graduated. One early theme you can see in these pieces is that we gravitated toward writing about other content we were interacting with. Often the impetus for a piece would be a book that we were reading or a few articles that we had read.
 
 As we both became busier with full time jobs this blog floated into the background. It became difficult to put together pieces and we mostly stopped writing. It felt like pieces had to be polished and there was a fair amount of friction to even getting started. We had to write using Medium's tools and on their website. Writing is a really difficult task and any small fractions can be the difference between writing and just letting ideas float away.

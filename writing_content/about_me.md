@@ -5,9 +5,9 @@ tags: []
 categories: ['personal']
 ---
 
-The most rewarding experiences in my life are sharing my experience and connecting with others. This website is just one way for me to articulate how I move through the world. My interests are all over the place and constantly changing. I deeply value learning about spaces that are completely novel to me and connecting them to things I have some knowledge about.
+The most rewarding experiences in my life are connecting with others. This website is a project for me to articulate and chronicle how I am moving through the world. My interests are all over the place and constantly changing. I deeply value learning about spaces that are completely novel to me and connecting them to things I have some knowledge about.
 
-Writing and creating, while quite difficult, are some of the most rewarding activities. This one of the big reasons why I love creating software.
+Writing and creating, while quite difficult, are some of the most rewarding activities. This is one of the big reasons why I love creating software.
 
 A lot of my interests center around understanding human behavior. I am particular fascinated in examining social science questions related to technology.
 
@@ -19,10 +19,9 @@ Here are some pieces to read that give you a sense of how I parse the world
 * [Year in Review 2018](#/post/2018_review)
 * [Building Models and the Scientific Method](#/post/model_building)
 
-I grew up in an apartment on the Upper West Side of New York. I then moved to Chicago for five years graduating from the University of Chicago and living on the north side for a year. I have been living in Oakland for roughly two years now. I embody the characteristics of both growing up a twin and will forever feel like the younger brother that I am to my six year older brother.
+I grew up in an apartment on the Upper West Side of New York. I then moved to Chicago for five years graduating from the University of Chicago and living on the north side for a year. I lived in Oakland for roughly three years before moving to Cambridge. I embody the characteristics of growing up a twin and will forever feel like the younger brother that I am to my six year older brother.
 
-Outside of work I spend a lot of my time playing and training for Ultimate Frisbee. I am an avid cook, mediocre meditator and a so-so journaler.
-
+Outside of work I spend a lot of time playing and training for Ultimate Frisbee. I am an avid cook, aspiring Ashtangi, mediocre meditator and a so-so journaler.
 
 ## Work Experience
 
