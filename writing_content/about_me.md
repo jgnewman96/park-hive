@@ -14,6 +14,7 @@ A lot of my interests center around understanding human behavior. I am particula
 Here are some pieces to read that give you a sense of how I parse the world
 * [What are we looking for in a Politican](#/post/politican_ideaology_leadership)
 * [Reflections on Playing Games](#/post/games)
+* [Year in Review 2021](#/post/2021_review)
 * [Year in Review 2020](#/post/2020_review)
 * [Year in Review 2019](#/post/2019_review)
 * [Year in Review 2018](#/post/2018_review)
